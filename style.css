@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.main-block {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-gap: 10px;
+    background: black;
+}
+.box {
+    width: 60px;
+    height: 60px;
+    background: white;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    height: 50px;
+    width: 250px;
+    margin: 10px auto;
+    background: #3b045a;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: background .5s ease;
+}
+.button:hover{
+    background: #7505b1;
+    cursor: pointer;
+}
+.players-button {
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.one {
+    width: 120px;
+    font-weight: bold;
+    height: 100%;
+    background: green;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: .5s background ease;
+}
+.two {
+    width: 120px;
+    font-weight: bold;
+    height: 100%;
+    background: #ff3335;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: .5s background ease;
+}
+.two:hover {
+    cursor: pointer;
+    background: tomato;
+}
+.one:hover {
+    cursor: pointer;
+    background: #00c500;
+}
