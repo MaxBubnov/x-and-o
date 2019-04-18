@@ -47,7 +47,7 @@ window.onload = function () {
                         console.log(checkWinner());
                         iteration = !iteration;
                         lastXChoise = parseInt(e.target.id);
-                        roboGame()
+                        setTimeout(roboGame, 70)
                     }
                 }
             }
@@ -140,18 +140,37 @@ window.onload = function () {
                     bloks[5].innerHTML = 'O';
                 }else if(bloks[6].innerHTML == 'X' && bloks[8].innerHTML == 'X' && bloks[7].innerHTML == ''){
                     bloks[7].innerHTML = 'O';
-                }else if(bloks[2].innerHTML == 'X' && bloks[6].innerHTML == 'X' && bloks[7].innerHTML == ''){
-                    bloks[7].innerHTML = 'O';
-                }else if(bloks[0].innerHTML == 'X' && bloks[8].innerHTML == 'X' && bloks[1].innerHTML == ''){
+                }else if(bloks[2].innerHTML == 'X' && bloks[6].innerHTML == 'X' && bloks[1].innerHTML == ''){
                     bloks[1].innerHTML = 'O';
+                }else if(bloks[0].innerHTML == 'X' && bloks[8].innerHTML == 'X' && bloks[7].innerHTML == ''){
+                    bloks[7].innerHTML = 'O';
+                }else if(bloks[2].innerHTML == 'X' && bloks[7].innerHTML == 'X' && bloks[8].innerHTML == ''){
+                    bloks[8].innerHTML = 'O';
+                }else if(bloks[0].innerHTML == 'X' && bloks[7].innerHTML == 'X' && bloks[6].innerHTML == ''){
+                    bloks[6].innerHTML = 'O';
+                }else if(bloks[0].innerHTML == 'X' && bloks[5].innerHTML == 'X' && bloks[2].innerHTML == ''){
+                    bloks[2].innerHTML = 'O';
+                }else if(bloks[6].innerHTML == 'X' && bloks[5].innerHTML == 'X' && bloks[8].innerHTML == ''){
+                    bloks[8].innerHTML = 'O';
+                }else if(bloks[8].innerHTML == 'X' && bloks[1].innerHTML == 'X' && bloks[2].innerHTML == ''){
+                    bloks[2].innerHTML = 'O';
+                }else if(bloks[6].innerHTML == 'X' && bloks[1].innerHTML == 'X' && bloks[0].innerHTML == ''){
+                    bloks[0].innerHTML = 'O';
+                }else if(bloks[8].innerHTML == 'X' && bloks[3].innerHTML == 'X' && bloks[6].innerHTML == ''){
+                    bloks[6].innerHTML = 'O';
+                }else if(bloks[2].innerHTML == 'X' && bloks[3].innerHTML == 'X' && bloks[0].innerHTML == ''){
+                    bloks[0].innerHTML = 'O';
+                }else if(bloks[5].innerHTML == 'X' && bloks[7].innerHTML == 'X' && bloks[8].innerHTML == ''){
+                    bloks[8].innerHTML = 'O';
                 }else {
                     AIchoise();
                 }
             }
         }
-        /*012
-          345
-          678
+        /*
+        	012
+          	345
+          	678
          */
         bloks.forEach((item) => {
             if(item.innerHTML === 'O'){
